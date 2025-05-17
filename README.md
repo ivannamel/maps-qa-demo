@@ -21,10 +21,6 @@ maps-qa-demo/
 ├── requirements.txt # зависимости Python
 └── README.md
 
-bash
-Копировать
-Редактировать
-
 ## Предварительные требования
 
 - Python 3.9+  
@@ -41,20 +37,15 @@ bash
    python3 -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt
+
 Запуск mock-сервера геокодирования
 
-bash
-Копировать
-Редактировать
 python mock_server.py
 — сервис доступен на http://localhost:8080
 
 Запуск HTTP-сервера для фронтенда
 (в новом терминале)
 
-bash
-Копировать
-Редактировать
 cd web-ui
 python3 -m http.server 8000
 — фронтенд на http://localhost:8000/index.html
@@ -62,9 +53,6 @@ python3 -m http.server 8000
 Прогон автотестов
 (в терминале с активным .venv, из корня проекта)
 
-bash
-Копировать
-Редактировать
 pytest -q
 Что тестируется
 API
